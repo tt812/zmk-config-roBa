@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                             &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                             &kp G      &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp B      &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT UNDER
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INTERNATIONAL_5  &mkp LCLK  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &mt RCTRL ESCAPE
+&kp Q             &kp W         &kp E         &kp R                             &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                             &kp G        &kp CAPS                           &kp MINUS        &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp B        &kp INTERNATIONAL_5                &kp SEMICOLON    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT UNDER
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 INTERNATIONAL_5  &lt 1 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &lt 1 BACKSPACE  &lt 1 ENTER                             &mt RCTRL ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,14 +91,14 @@
 
         layer_1 {
             bindings = <
-&kp LS(TAB)  &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)    &kp PG_UP                           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH     &kp MINUS
-&lt 4 TAB    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_DN  &kp CAPS      &kp PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &mt RIGHT_SHIFT ENTER
-&kp LC(Z)    &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(Y)  &trans        &kp EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt RIGHT_WIN MINUS
-&kp LCTRL    &trans          &trans          &trans           &trans     &trans        &trans     &kp KP_NUMBER_0                                                  &kp LC(LA(DELETE))
+&kp LS(TAB)  &kp LA(LEFT)    &kp UP                &kp LA(RIGHT)    &kp PG_UP                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH     &kp MINUS
+&lt 4 TAB    &kp LEFT_ARROW  &kp DOWN_ARROW        &kp RIGHT_ARROW  &kp PG_DN  &kp CAPS      &kp PLUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &mt RIGHT_SHIFT ENTER
+&kp LC(Z)    &kp LC(X)       &kp LC(C)             &kp LC(V)        &kp LC(Y)  &trans        &kp EQUAL      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt RIGHT_WIN MINUS
+&kp LCTRL    &trans          &mt LEFT_WIN AT_SIGN  &trans           &trans     &trans        &kp BACKSPACE  &kp KP_NUMBER_0                                                  &kp LC(LA(DELETE))
             >;
         };
 
-        NUM {
+        layer_2 {
             bindings = <
 &kp EXCLAMATION  &kp HASH  &kp DOLLAR   &kp PERCENT  &kp AMPERSAND                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT        &kp DOUBLE_QUOTES  &kp TILDE
 &kp F7           &kp F8    &kp F9       &kp F10      &kp F11        &kp F12      &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON          &mt RIGHT_SHIFT ENTER
@@ -107,7 +107,7 @@
             >;
         };
 
-        ARROW {
+        layer_3 {
             bindings = <
 &kp LS(TAB)     &none               &kp LG(D)       &none            &trans                      &kp PG_UP     &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &trans
 &kp TAB         &kp LG(LEFT_ARROW)  &kp LG(TAB)     &kp RIGHT_ARROW  &none   &trans      &trans  &kp PG_DN     &kp LEFT            &kp DOWN_ARROW  &kp RIGHT            &lt 4 ENTER
@@ -120,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans    &trans                          &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans    &trans    &trans        &trans  &trans  &none   &mkp MB1  &mkp MB2  &lt 5 RC(RS(B))
+&trans  &trans  &trans  &trans    &trans    &trans        &trans  &trans  &trans  &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &mkp MB3  &mkp MB1  &mkp MB2      &trans  &trans                              &trans
             >;
         };
 
@@ -138,10 +138,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                           &none   &none   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans  &trans  &trans        &trans        &trans
+&trans  &none   &none   &none   &trans  &trans      &bootloader  &trans  &trans  &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                      &bt BT_CLR_ALL
             >;
         };
 
